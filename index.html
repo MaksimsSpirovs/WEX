@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Registration</title>
+<style>
+    /* CSS styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f5e8; /* Light beige background */
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background: #f5f0e3; /* Slightly darker shade of beige */
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 36px;
+        color: #333;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #555;
+    }
+
+    .form-group input {
+        width: calc(100% - 20px); /* Account for padding */
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background-color: #b9a05f;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .btn:hover {
+        background-color: #a88d48;
+    }
+
+    .error {
+        color: red;
+    }
+
+    .success {
+        color: green;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Nous WEX Project</h1>
+    <form id="registrationForm" action="#" method="post" onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="userId">User ID:</label>
+            <input type="text" id="userId" name="userId" required>
+            <small id="userIdError" class="error"></small>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <small id="emailError" class="error"></small>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <small id="passwordError" class="error"></small>
+        </div>
+        <div class="form-group">
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <button type="submit" class="btn">Register</button>
+    </form>
+</div>
+
+<script>
+    // JavaScript code remains the same
+</script>
+
+</body>
+</html>
